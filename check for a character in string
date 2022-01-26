@@ -1,0 +1,21 @@
+import java.util.*;
+ class charactersearch {public static void main(String[] args)
+    {String str;
+     Scanner obj=new Scanner(System.in);
+     System.out.println("Enter string:");
+    str= obj.nextLine();
+    char ch;
+    System.out.println("\nEnter character to be searched for:");
+    ch= obj.next().charAt(0);
+    int index=-1;
+    index= str.indexOf(ch);
+    if(index!=-1)
+    {System.out.println("Position of given element:");
+    int i=index+1;
+    System.out.println(i);}
+    else
+    System.out.println("Element not found");
+
+    }
+    
+}
