@@ -1,0 +1,29 @@
+import java.util.*;
+public class trace
+{   
+	public static void main(String args[]) {
+	int n,m,p,q,sum=0,i,j;
+    int [][]arr1=new int[100][100];
+	Scanner obj=new Scanner(System.in);
+	System.out.println("Enter no of rows and columns for matrix:");
+	m=obj.nextInt();
+	n=obj.nextInt();
+    if(m==n)
+    {System.out.println("\nEnter array:");
+	for(i=0;i<m;i++)
+	 {   for(j=0;j<n;++j) 
+	     {arr1[i][j]=obj.nextInt();}}
+    for(i=0;i<m;i++)
+    {for(j=0;j<n;j++)
+    {if(i==j)
+        sum=sum +arr1[i][j];}}
+    System.out.println("Trace of matrix :");
+    System.out.println(sum);}
+    else
+    System.out.println( "sorry..it is not a square matrix");
+    }
+
+    private static void extracted() {
+        System.out.println("Sorry..it is not a square matrix..");
+    }}
+
