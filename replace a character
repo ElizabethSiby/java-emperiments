@@ -1,0 +1,17 @@
+import java.util.*;
+public class replacechar {public static void main(String[] args) {String str;int i;String str2;
+
+    Scanner obj=new Scanner(System.in);
+    System.out.println("Enter string:");
+   str= obj.nextLine();
+   char ch,nc;
+   System.out.println("\nEnter character to be replaced and new character :");
+   ch= obj.next().charAt(0);
+   nc= obj.next().charAt(0);
+   str2=str.replace(ch,nc);
+   System.out.println("\nNew string:"); 
+   System.out.println(str2);
+    
+}
+    
+}
