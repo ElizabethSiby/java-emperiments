@@ -1,0 +1,19 @@
+import java.util.*;
+public class frequency {public static void main(String[] args) {String str;char ch;
+    Scanner obj=new Scanner(System.in);
+    System.out.println("Enter string:");
+   str= obj.nextLine();
+   System.out.println("\nEnter character whoose frequency need to be found :");
+   ch=obj.next().charAt(0);
+   int len=str.length();
+   char string[] = str.toCharArray();  
+   int frq=0;
+   for(int i=0;i<=len-1;i++)
+   {if(string[i]==ch)
+         frq++;}
+    System.out.println("\nFreuency of character :");
+    System.out.println(frq);  
+
+}
+    
+}
